@@ -479,7 +479,21 @@ a:hover { color: var(--orange); }
   .hb-hero-art { order: -1; }
   .hb-mascot-bare { width: 220px; }
   .hb-nav { display: none; }
-  .hb-header { padding: 14px 20px; }
+
+  /* Header wraps to two rows: brand on top, persona toggle centered below */
+  .hb-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 20px;
+  }
+  .hb-brand { flex: 1 1 auto; justify-content: flex-start; }
+  .hb-brand-mascot { width: 44px; height: 44px; }
+  .hb-holo { font-size: 16px; }
+  .hb-bob { font-size: 12px; }
+  .hb-persona { flex: 1 1 100%; justify-content: center; }
+  .hb-persona-opt { padding: 8px 22px; }
+
   .hb-hero, .hb-features, .hb-waitlist, .hb-footer { padding-left: 20px; padding-right: 20px; }
   .hb-waitlist-card { padding: 28px; }
   .hb-agentic { padding: 24px 20px 0; }
