@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 export default function LegalLayout({
@@ -12,9 +13,9 @@ export default function LegalLayout({
   return (
     <main className="hb-legal">
       <div className="hb-legal-head">
-        <a href="/" className="hb-back">
+        <Link href="/" className="hb-back">
           ‹ Home
-        </a>
+        </Link>
         <h1 className="hb-h1" style={{ fontSize: "clamp(36px, 5vw, 56px)" }}>
           {title}
         </h1>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import PersonaToggle from "./PersonaToggle";
 import type { Persona } from "../lib/persona";
 
@@ -12,17 +13,17 @@ export default function Header({
 }) {
   return (
     <header className="hb-header">
-      <div className="hb-brand">
+      <Link href="/" className="hb-brand" aria-label="HoloBob — home">
         <img src="/holobob-companion.png" alt="" className="hb-brand-mascot" />
         <div className="hb-wordmark">
           <span className="hb-holo">HOLO</span>
           <span className="hb-bob">BOB</span>
         </div>
-      </div>
+      </Link>
       <nav className="hb-nav">
-        <a href="#features">Features</a>
-        <a href="#waitlist">Waitlist</a>
-        <a href="/support">Support</a>
+        <Link href="/#features">Features</Link>
+        <Link href="/#waitlist">Waitlist</Link>
+        <Link href="/support">Support</Link>
       </nav>
       <PersonaToggle persona={persona} setPersona={setPersona} />
     </header>
