@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             contents without your action, and doesn&rsquo;t train third-party models on your scans.
           </p>
           <p>
-            Questions in the meantime? <strong>privacy@holobob.app</strong>
+            Questions in the meantime? <strong>privacy@holobob.com</strong>
           </p>
         </div>
       </LegalLayout>

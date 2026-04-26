@@ -22,7 +22,7 @@ export default function SupportPage() {
         <SupportFaq />
         <h2>Contact us</h2>
         <p>
-          Email <strong>support@holobob.app</strong>. Include your account email + a screenshot
+          Email <strong>support@holobob.com</strong>. Include your account email + a screenshot
           if you can. We answer within 1 business day.
         </p>
         <h2>Status</h2>

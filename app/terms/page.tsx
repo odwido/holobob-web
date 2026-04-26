@@ -25,7 +25,7 @@ export default function TermsPage() {
             and don&rsquo;t use the data to make trades you can&rsquo;t afford.
           </p>
           <p>
-            Questions in the meantime? <strong>legal@holobob.app</strong>
+            Questions in the meantime? <strong>legal@holobob.com</strong>
           </p>
         </div>
       </LegalLayout>
