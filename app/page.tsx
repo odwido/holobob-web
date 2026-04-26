@@ -1,12 +1,24 @@
+"use client";
+
+import { useState } from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import AgenticBand from "./components/AgenticBand";
+import FeatureGrid from "./components/FeatureGrid";
+import WaitlistForm from "./components/WaitlistForm";
+import Footer from "./components/Footer";
+import type { Persona } from "./lib/persona";
+
 export default function Home() {
+  const [persona, setPersona] = useState<Persona>("collector");
   return (
-    <main className="flex flex-1 flex-col items-center justify-center px-6 text-center">
-      <h1 className="text-6xl font-semibold tracking-tight sm:text-7xl">
-        holobob
-      </h1>
-      <p className="mt-6 max-w-md text-base text-zinc-600 dark:text-zinc-400">
-        Coming soon.
-      </p>
-    </main>
+    <>
+      <Header persona={persona} setPersona={setPersona} />
+      <Hero persona={persona} />
+      <AgenticBand persona={persona} />
+      <FeatureGrid persona={persona} />
+      <WaitlistForm />
+      <Footer />
+    </>
   );
 }
