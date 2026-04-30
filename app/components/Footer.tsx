@@ -12,6 +12,7 @@ export default function Footer() {
         <div className="hb-footer-links">
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>
+          <Link href="/cookies">Cookies</Link>
           <Link href="/support">Support</Link>
           <Link href="/#waitlist">Waitlist</Link>
         </div>
