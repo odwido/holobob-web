@@ -445,9 +445,21 @@ a:hover { color: var(--orange); }
 .hb-back:hover { color: var(--primary); }
 .hb-legal-meta { color: var(--fg-3); font-size: 13px; margin-top: 12px; font-family: var(--font-mono); }
 .hb-legal-body h2 { margin-top: 36px; font-size: 22px; font-weight: 800; }
+.hb-legal-body h3 { margin-top: 28px; font-size: 18px; font-weight: 700; color: var(--fg); }
 .hb-legal-body p, .hb-legal-body li { color: var(--fg); font-size: 16px; line-height: 1.7; }
 .hb-legal-body a { color: var(--primary); border-bottom: 1px solid var(--border-active); }
 .hb-legal-body strong { color: var(--fg); }
+.hb-legal-body em { color: var(--fg-2); }
+.hb-legal-body table {
+  width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;
+  border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+}
+.hb-legal-body th, .hb-legal-body td {
+  padding: 10px 14px; border: 1px solid var(--border);
+  text-align: left; vertical-align: top; color: var(--fg-2); line-height: 1.5;
+}
+.hb-legal-body th { background: var(--surface); color: var(--fg); font-weight: 700; }
+.hb-legal-body td.hb-legal-yn { text-align: center; font-weight: 700; color: var(--fg); }
 .hb-placeholder {
   padding: 32px;
   border: 1px dashed var(--border-active);
