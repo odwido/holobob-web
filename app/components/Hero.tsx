@@ -1,4 +1,5 @@
 import BobBubble from "./BobBubble";
+import HoloMascot from "./HoloMascot";
 import type { Persona } from "../lib/persona";
 
 const headlines = {
@@ -42,9 +43,7 @@ export default function Hero({ persona }: { persona: Persona }) {
             <span className="holo">HOLO</span>
             <span className="bob">BOB</span>
           </div>
-          <div className="hb-mascot-bare">
-            <img src="/holobob-companion.png" alt="HoloBob" />
-          </div>
+          <HoloMascot />
           <BobBubble mood="happy">{h.bob}</BobBubble>
         </div>
       </div>
